@@ -1,7 +1,12 @@
 function removeSpaces() {
-    const inputText = document.getElementById('inputText').value;
-    const outputText = inputText.replace(/\s+/g, '');
+    const inputTextElement = document.getElementById('inputText');
+    const inputText = inputTextElement.value;
+    // 連続するスペースを1つのスペースに置き換える
+    const outputText = inputText.replace(/\s+/g, ' ');
     document.getElementById('outputText').value = outputText;
+
+    // 入力テキストボックスの中身を空にする
+    inputTextElement.value = '';
 }
 function copyToClipboard() {
     const outputText = document.getElementById('outputText');
