@@ -5,7 +5,13 @@ function removeSpaces() {
 }
 function copyToClipboard() {
     const outputText = document.getElementById('outputText');
-    outputText.select();  // テキストを選択
-    document.execCommand('copy');  // クリップボードにコピー
-    alert('クリップボードにコピーしました！');
+    const copyButton = document.querySelector('button[onclick="copyToClipboard()"]');
+    
+    outputText.select();
+    document.execCommand('copy');
+    
+    copyButton.textContent = 'コピーしました！';
+    setTimeout(() => {
+        copyButton.textContent = 'クリップボードにコピー';
+    }, 2000);
 }
