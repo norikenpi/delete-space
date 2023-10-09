@@ -1,6 +1,9 @@
 # スペース削除ツール
 
 このツールは、テキストから不要なスペースを簡単に削除するためのシンプルなウェブアプリケーションです。
+以下はこのリポジトリのgithub pagesです。
+
+https://norikenpi.github.io/delete-space/
 
 ## 特徴
 
