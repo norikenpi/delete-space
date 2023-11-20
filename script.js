@@ -2,7 +2,7 @@ function removeSpaces() {
     const inputTextElement = document.getElementById('inputText');
     const inputText = inputTextElement.value;
     // 連続するスペースを1つのスペースに置き換える
-    const outputText = inputText.replace(/\s+/g, ' ');
+    const outputText = inputText.replace(/\s+/g, '');
     const outputTextElement = document.getElementById('outputText');
     outputTextElement.value = outputText;
 
